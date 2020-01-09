@@ -1,0 +1,65 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: white;
+    text-shadow: 1px 1px 2px #2e2d2d;
+    transform: translateX(-50px) translateY(-50px) rotate(-25deg);
+    align-self: flex-end;
+  }
+
+  #ImageEditor {
+    width: 80%;
+    height: 80%;
+    min-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .image-editor-menu {
+      padding-top: 20px;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+
+      label {
+        width: 20%;
+        .image-editor-button {
+          width: 100%;
+        }
+      }
+
+      .image-editor-button {
+        width: 20%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 300;
+        color: #2e2d2d;
+        border-top: solid 1.1px #2e2d2d;
+        border-bottom: solid 1.1px #2e2d2d;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:last-of-type {
+          border-right: 0;
+        }
+
+        &:hover {
+          color: white;
+          background-color: #5685bb;
+        }
+      }
+    }
+  }
+}
